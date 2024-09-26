@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephulator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+        video {
+            width: 100%; /* Scale to 100% of the original size */
+            height: 100%; /* Maintain aspect ratio */
+            border: 2px solid #ddd; /* Optional: Add a border */
+            border-radius: 0px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
