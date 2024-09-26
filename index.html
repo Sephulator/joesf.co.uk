@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Video</title>
+    <title>Video Display</title>
     <style>
-        body, html {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
+            background-color: #f0f0f0;
         }
         video {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
+            width: 90%; /* Scale to 90% of the original size */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ddd; /* Optional: Add a border */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
         }
     </style>
 </head>
 <body>
-    <video autoplay muted loop playsinline>
+    <video controls autoplay muted loop>
         <source src="1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
